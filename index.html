@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Lic. Sebastián Núñez · Psicólogo psicoanalista en Comodoro Rivadavia">
-<meta property="og:description" content="Atención presencial en Comodoro Rivadavia y online para Argentina y el exterior.">
+<meta property="og:description" content="Atención presencial en Comodoro Rivadavia y online para Argentina y el exterior. Supervisión clínica.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastiannunezpsi.github.io/">
+<link rel="canonical" href="https://sebastiannunezpsi.github.io/">
 <title>Psicólogo psicoanalista en Comodoro Rivadavia y online | Lic. Sebastián Núñez</title>
 <meta name="description" content="Lic. C. Sebastián Núñez, psicólogo y psicoanalista de orientación lacaniana en Comodoro Rivadavia (Chubut). Atención presencial y online para Argentina y el exterior. Supervisión clínica. M.P. 0596 · M.N. 45.160.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,217 +31,287 @@
     "jobTitle": "Psicólogo clínico y psicoanalista",
     "identifier": "https://orcid.org/0009-0004-0440-4843",
     "sameAs": ["https://orcid.org/0009-0004-0440-4843"],
-    "alumniOf": [{"@type":"CollegeOrUniversity","name":"Universidad Nacional de La Plata"},{"@type":"CollegeOrUniversity","name":"Universidad Nacional de San Martín"}]
+    "alumniOf": [{"@type":"CollegeOrUniversity","name":"Universidad Nacional de La Plata"},{"@type":"CollegeOrUniversity","name":"Universidad Nacional de San Martín"},{"@type":"CollegeOrUniversity","name":"Universidad ISALUD"}]
   }
 }
 </script>
 <style>
+/* Layout: banda oscura de apertura con la meseta patagónica en capas; debajo, columna de lectura sobre fondo claro y bandas alternas por sección */
 :root{
-  --bg:#F2F4F3; --surface:#FFFFFF; --ink:#1B2730; --muted:#55636C; --line:#CBD3D6;
-  --sea:#1F5A66; --lichen:#A07E3A;
+  --bg:#F3F4F1; --paper:#FBFBF9; --ink:#17262C; --muted:#56656B; --line:#D3D8D4;
+  --deep:#12313A; --sea:#1E5864; --gold:#A8833A; --steppe:#C8BC9F; --onDeep:#EEF2EF;
   --display:"Newsreader", Georgia, "Times New Roman", serif;
   --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
 }
-@media (prefers-color-scheme: dark){:root{
-  --bg:#111A1F; --surface:#18242A; --ink:#E6ECEE; --muted:#9AAAB2; --line:#2C3B42;
-  --sea:#7FBCC6; --lichen:#D2B06A; color-scheme:dark}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F181C; --paper:#152227; --ink:#E4EAE7; --muted:#9BAAAD; --line:#29393F;
+  --deep:#0B2026; --sea:#7DB9C3; --gold:#D3B06B; --steppe:#6F6650; --onDeep:#E4EAE7; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F181C; --paper:#152227; --ink:#E4EAE7; --muted:#9BAAAD; --line:#29393F;
+  --deep:#0B2026; --sea:#7DB9C3; --gold:#D3B06B; --steppe:#6F6650; --onDeep:#E4EAE7; color-scheme:dark}
 
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-img{max-width:100%}
-.wrap{max-width:68rem;margin:0 auto}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--body);-webkit-font-smoothing:antialiased}
+.in{max-width:70rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .read{max-width:40rem}
 a{color:var(--sea)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--lichen);outline-offset:3px}
-h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.15}
-h2{font-size:clamp(1.7rem,4vw,2.3rem)}
-h3{font-size:1.3rem;font-weight:500}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.12}
+h2{font-size:clamp(1.9rem,4.4vw,2.8rem);letter-spacing:-.01em}
+h3{font-size:1.35rem;font-weight:500}
 p{margin:0}
-.label{font:500 .75rem/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--lichen)}
-.mono{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+.label{font:600 .72rem/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 
-nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding-block:22px;border-bottom:1px solid var(--line)}
-nav .who{font-family:var(--display);font-size:1.15rem}
-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:18px;font-size:.92rem}
-nav a{color:var(--muted);text-decoration:none}
-nav a:hover{color:var(--ink)}
-
-.hero{padding-block:clamp(48px,9vw,104px) 40px;display:grid;gap:28px}
-.hero h1{font-size:clamp(2.3rem,7vw,4.4rem);letter-spacing:-.01em}
-.hero h1 em{color:var(--sea)}
-.hero .lede{font-size:1.2rem;color:var(--muted);max-width:36rem}
+/* apertura */
+.top{background:var(--deep);color:var(--onDeep);position:relative;overflow:hidden}
+nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;padding-block:22px}
+.mark{display:flex;align-items:center;gap:12px;color:var(--onDeep);text-decoration:none}
+.mark i{font:italic 400 1.35rem/1 var(--display);width:44px;height:44px;border:1px solid color-mix(in srgb,var(--onDeep) 40%,transparent);border-radius:50%;display:grid;place-items:center}
+.mark span{font:500 .95rem/1.25 var(--body)}
+.mark small{display:block;font-weight:400;opacity:.7;font-size:.8rem}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.92rem}
+nav ul a{color:var(--onDeep);opacity:.78;text-decoration:none}
+nav ul a:hover{opacity:1}
+.hero{padding-block:clamp(40px,8vw,96px) clamp(120px,16vw,190px);display:grid;gap:26px;position:relative;z-index:1}
+.hero h1{font-size:clamp(2.5rem,7.4vw,5rem);font-weight:300;letter-spacing:-.02em;max-width:15ch}
+.hero h1 em{font-style:italic;color:var(--steppe)}
+.hero .lede{font-size:clamp(1.05rem,2vw,1.22rem);opacity:.85;max-width:34rem}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:12px 20px;border-radius:2px;font:500 .95rem var(--body);text-decoration:none;border:1px solid var(--sea)}
-.btn.primary{background:var(--sea);color:var(--bg)}
-.btn.ghost{color:var(--sea)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font:500 .95rem var(--body);text-decoration:none;border:1px solid transparent}
+.btn.light{background:var(--onDeep);color:var(--deep)}
+.btn.line{border-color:color-mix(in srgb,var(--onDeep) 45%,transparent);color:var(--onDeep)}
+.btn svg{width:18px;height:18px;flex:none}
+.mat{font-size:.82rem;letter-spacing:.04em;opacity:.65}
+.meseta{position:absolute;left:0;right:0;bottom:-1px;height:clamp(110px,15vw,180px);width:100%}
+.meseta .a{fill:color-mix(in srgb,var(--steppe) 30%,var(--deep))}
+.meseta .b{fill:color-mix(in srgb,var(--steppe) 55%,var(--bg))}
+.meseta .c{fill:var(--bg)}
 
-.horizon{height:28px;margin-block:8px 0;background:
-  linear-gradient(var(--line),var(--line)) 0 100%/100% 1px no-repeat}
-.horizon svg{display:block;width:100%;height:28px}
-.horizon path{fill:none;stroke:var(--line);stroke-width:1}
+/* secciones */
+section{padding-block:clamp(56px,8vw,96px)}
+section .in{display:grid;gap:30px}
+.alt{background:var(--paper);border-block:1px solid var(--line)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(28px,5vw,72px);align-items:start}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.split > *{min-width:0;display:grid;gap:16px;align-content:start}
+.prose p{color:var(--muted)}
+.prose p:first-child{color:var(--ink);font:400 1.3rem/1.5 var(--display)}
 
-section{padding-block:clamp(48px,7vw,80px);display:grid;gap:28px}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:32px 40px}
-.cols > *{min-width:0;display:grid;gap:10px;align-content:start}
-.cols p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(14.5rem,1fr));gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:26px 24px;display:grid;gap:10px;align-content:start}
+.alt .card{background:var(--bg)}
+.card svg{width:30px;height:30px;stroke:var(--sea);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.card p{color:var(--muted);font-size:.98rem}
 
-.modal{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.modal > div{background:var(--surface);padding:24px;display:grid;gap:8px;align-content:start}
-.modal p{color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:36px 56px}
+.cols > *{min-width:0;display:grid;gap:12px;align-content:start}
+.tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}
+.tl li{position:relative;padding:0 0 22px 22px}
+.tl li::before{content:"";position:absolute;left:-5px;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--gold)}
+.alt .tl li::before{background:var(--paper)}
+.tl .k{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.tl strong{display:block;font:500 1.12rem/1.35 var(--display)}
+.tl .d{display:block;color:var(--muted);font-size:.95rem}
 
-.cv{display:grid;gap:0;border-top:1px solid var(--line)}
-.cv li{list-style:none;display:grid;grid-template-columns:7.5rem 1fr;gap:16px;padding-block:14px;border-bottom:1px solid var(--line)}
-.cv{padding:0;margin:0}
-.cv .yr{font-family:var(--mono);font-size:.85rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
-.cv strong{font-weight:500}
-.cv span.d{display:block;color:var(--muted);font-size:.95rem}
-@media (max-width:520px){.cv li{grid-template-columns:1fr;gap:2px}}
+.book{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+@media (max-width:620px){.book{grid-template-columns:1fr}}
+.cover{aspect-ratio:2/3;width:100%;max-width:13rem;background:var(--deep);color:var(--onDeep);padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;border-radius:2px 6px 6px 2px;box-shadow:0 18px 40px -18px rgba(10,30,36,.55);position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(170deg,transparent 0 30%,color-mix(in srgb,var(--steppe) 45%,var(--deep)) 30% 100%)}
+.cover b{font:italic 400 1.45rem/1.08 var(--display);position:relative;z-index:1}
+.cover small{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8;position:relative;z-index:1}
+.book .read{display:grid;gap:14px}
+.book .read p{color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px 22px;font-weight:500;font-size:.95rem}
 
-.book{display:grid;grid-template-columns:minmax(0,11rem) 1fr;gap:32px;align-items:start}
-.cover{aspect-ratio:2/3;max-width:100%;background:var(--sea);color:var(--bg);padding:16px;display:flex;flex-direction:column;justify-content:space-between;font-family:var(--display)}
-.cover b{font-weight:400;font-size:1.25rem;line-height:1.1}
-.cover small{font-family:var(--body);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
-@media (max-width:560px){.book{grid-template-columns:1fr}.cover{max-width:11rem}}
-
-.contact{display:grid;gap:12px}
-.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:16px 18px;background:var(--surface);border:1px solid var(--line)}
-.row .k{min-width:6.5rem;color:var(--muted);font-size:.9rem}
-.row .v{flex:1;min-width:0;overflow-wrap:anywhere;font-weight:500}
-.row button{font:500 .85rem var(--body);background:none;color:var(--sea);border:1px solid var(--line);padding:6px 12px;cursor:pointer}
-
-details{border-bottom:1px solid var(--line);padding-block:14px}
+details{border-bottom:1px solid var(--line);padding-block:16px}
 details:first-of-type{border-top:1px solid var(--line)}
-summary{cursor:pointer;font-weight:500}
+summary{cursor:pointer;font:500 1.15rem/1.4 var(--display);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-family:var(--body)}
+details[open] summary::after{content:"−"}
 details p{color:var(--muted);margin-top:8px}
 
-footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:.88rem}
-@media (prefers-reduced-motion:no-preference){.btn{transition:opacity .15s}.btn:hover{opacity:.85}}
+.contact{background:var(--deep);color:var(--onDeep)}
+.contact h2{color:var(--onDeep)}
+.contact .lede{opacity:.8;max-width:34rem}
+.rows{display:grid;gap:10px;max-width:40rem}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:16px 20px;border:1px solid color-mix(in srgb,var(--onDeep) 18%,transparent);border-radius:6px}
+.row .k{min-width:6.5rem;font-size:.85rem;opacity:.65}
+.row .v{flex:1;min-width:0;overflow-wrap:anywhere;font-weight:500;color:var(--onDeep);text-decoration:none}
+.row button{font:500 .82rem var(--body);background:none;color:var(--onDeep);border:1px solid color-mix(in srgb,var(--onDeep) 35%,transparent);border-radius:999px;padding:6px 14px;cursor:pointer}
+
+footer{background:var(--deep);color:var(--onDeep);border-top:1px solid color-mix(in srgb,var(--onDeep) 14%,transparent)}
+footer .in{padding-block:24px 36px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.85rem;opacity:.7}
+
+.wa{position:fixed;right:max(18px,calc(env(safe-area-inset-right,0px) + 12px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:5;width:56px;height:56px;border-radius:50%;background:var(--sea);color:var(--bg);display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.wa svg{width:26px;height:26px}
+@media (prefers-reduced-motion:no-preference){
+  .btn,.wa{transition:transform .18s ease,opacity .18s}
+  .btn:hover,.wa:hover{transform:translateY(-2px)}
+}
 </style>
 </head>
 <body>
 
-<div class="wrap">
-  <nav aria-label="Secciones">
-    <span class="who">Sebastián Núñez</span>
-    <ul>
-      <li><a href="#consultas">Consultas</a></li>
-      <li><a href="#trayectoria">Trayectoria</a></li>
-      <li><a href="#libro">Libro</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <header class="hero">
-    <p class="label">Psicólogo · Psicoanalista · Comodoro Rivadavia</p>
-    <h1>Un lugar para hablar<br>de lo que <em>a cada uno</em> le pasa</h1>
-    <p class="lede">Atiendo adultos en Comodoro Rivadavia y por videollamada, para quienes viven en otras ciudades del país o en el exterior. Trabajo desde el psicoanálisis de orientación lacaniana.</p>
-    <div class="cta">
-      <a class="btn primary" href="#contacto">Pedir una primera entrevista</a>
-      <a class="btn ghost" href="#trayectoria">Ver trayectoria</a>
+<header class="top">
+  <div class="in">
+    <nav aria-label="Secciones">
+      <a class="mark" href="#inicio"><i>SN</i><span>Sebastián Núñez<small>Psicólogo · Psicoanalista</small></span></a>
+      <ul>
+        <li><a href="#enfoque">Enfoque</a></li>
+        <li><a href="#consultas">Consultas</a></li>
+        <li><a href="#trayectoria">Trayectoria</a></li>
+        <li><a href="#libro">Libro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="inicio">
+      <p class="label">Comodoro Rivadavia · Online</p>
+      <h1>Un lugar para hablar de lo que <em>a cada uno</em> le pasa</h1>
+      <p class="lede">Atiendo adultos en Comodoro Rivadavia y por videollamada, para quienes viven en otras ciudades del país o en el exterior. Trabajo desde el psicoanálisis de orientación lacaniana.</p>
+      <div class="cta">
+        <a class="btn light" href="https://wa.me/5492974193406" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn line" href="#trayectoria">Ver trayectoria</a>
+      </div>
+      <p class="mat">Mag. Esp. Lic. C. Sebastián Núñez · M.P. 0596 · M.N. 45.160</p>
     </div>
-    <p class="mono">Lic. C. Sebastián Núñez · M.P. 0596 · M.N. 45.160</p>
-  </header>
+  </div>
+  <svg class="meseta" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+    <path class="a" d="M0 92 L210 92 L262 58 L520 58 L566 80 L760 80 L812 40 L1080 40 L1130 74 L1440 74 L1440 180 L0 180Z"/>
+    <path class="b" d="M0 128 L140 128 L188 104 L430 104 L470 120 L700 120 L748 96 L980 96 L1024 116 L1260 116 L1300 102 L1440 102 L1440 180 L0 180Z"/>
+    <path class="c" d="M0 160 L320 160 L360 146 L640 146 L676 156 L1000 156 L1040 142 L1440 142 L1440 180 L0 180Z"/>
+  </svg>
+</header>
 
-  <div class="horizon" aria-hidden="true"><svg viewBox="0 0 1000 28" preserveAspectRatio="none"><path d="M0 27 L180 27 L230 14 L420 14 L460 22 L600 22 L640 8 L820 8 L860 27 L1000 27"/></svg></div>
-
+<main>
   <section id="enfoque" aria-labelledby="t-enfoque">
-    <div class="read" style="display:grid;gap:16px">
-      <p class="label">Cómo trabajo</p>
-      <h2 id="t-enfoque">Sin recetas, caso por caso</h2>
-      <p>Alguien consulta porque algo dejó de andar: una angustia que no cede, un síntoma que se repite, un vínculo que se volvió difícil, un consumo que se fue de las manos. Lo que propongo es tomarse el tiempo de escuchar eso en sus propios términos, sin apurar un diagnóstico ni ofrecer soluciones de manual.</p>
-      <p>Cada tratamiento empieza con algunas entrevistas preliminares. Ahí vemos juntos qué lo trae, qué espera y de qué manera conviene seguir. La frecuencia y la duración no se fijan de antemano; se acuerdan según lo que cada caso requiere.</p>
+    <div class="in split">
+      <div>
+        <p class="label">Cómo trabajo</p>
+        <h2 id="t-enfoque">Sin recetas, caso por caso</h2>
+      </div>
+      <div class="prose" style="display:grid;gap:16px">
+        <p>Alguien consulta porque algo dejó de andar: una angustia que no cede, un síntoma que se repite, un vínculo que se volvió difícil, un consumo que se fue de las manos.</p>
+        <p>Lo que propongo es tomarse el tiempo de escuchar eso en sus propios términos, sin apurar un diagnóstico ni ofrecer soluciones de manual.</p>
+        <p>Cada tratamiento empieza con algunas entrevistas preliminares. Ahí vemos juntos qué lo trae, qué espera y de qué manera conviene seguir. La frecuencia y la duración no se fijan de antemano; se acuerdan según lo que cada caso requiere.</p>
+      </div>
     </div>
   </section>
 
-  <section id="consultas" aria-labelledby="t-consultas">
-    <p class="label">Consultas</p>
-    <h2 id="t-consultas">Modalidades de atención</h2>
-    <div class="modal">
-      <div>
-        <h3>Presencial</h3>
-        <p>Consultorio en Comodoro Rivadavia, Chubut. Turnos con horario acordado previamente.</p>
+  <section id="consultas" class="alt" aria-labelledby="t-consultas">
+    <div class="in">
+      <div style="display:grid;gap:10px">
+        <p class="label">Consultas</p>
+        <h2 id="t-consultas">Modalidades de atención</h2>
       </div>
-      <div>
-        <h3>Online</h3>
-        <p>Por videollamada para personas de cualquier lugar de Argentina y para hispanohablantes que viven en el exterior.</p>
-      </div>
-      <div>
-        <h3>Supervisión clínica</h3>
-        <p>Para psicólogos y equipos que quieran pensar sus casos, presencial u online. Especial atención a la práctica en hospitales y centros de salud.</p>
-      </div>
-      <div>
-        <h3>Instituciones</h3>
-        <p>Charlas, seminarios y espacios de formación sobre salud mental, atención primaria y psicoanálisis para equipos de salud y educación.</p>
+      <div class="cards">
+        <div class="card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27V13l11-8 11 8v14"/><path d="M13 27v-8h6v8"/></svg>
+          <h3>Presencial</h3>
+          <p>Consultorio en Comodoro Rivadavia, Chubut. Turnos con horario acordado previamente.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="16" rx="2"/><path d="M11 27h10M16 23v4"/></svg>
+          <h3>Online</h3>
+          <p>Por videollamada, para personas de cualquier lugar de Argentina y para hispanohablantes que viven en el exterior.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="13" r="3"/><path d="M4 26c0-4 3-7 7-7s7 3 7 7M18 26c0-3 2-5 4-5s5 2 5 5"/></svg>
+          <h3>Supervisión clínica</h3>
+          <p>Para psicólogos y equipos que quieran pensar sus casos, presencial u online. Especial atención a la práctica en hospitales y centros de salud.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 9l12-5 12 5-12 5z"/><path d="M9 11v7c0 2 3 4 7 4s7-2 7-4v-7M28 9v8"/></svg>
+          <h3>Instituciones</h3>
+          <p>Charlas, seminarios y espacios de formación sobre salud mental, atención primaria y psicoanálisis para equipos de salud y educación.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="trayectoria" aria-labelledby="t-tray">
-    <p class="label">Trayectoria</p>
-    <h2 id="t-tray">Formación y práctica</h2>
-    <div class="cols">
-      <div>
-        <h3>Formación</h3>
-        <ul class="cv">
-          <li><span class="yr">2024</span><span><strong>Magíster en Clínica Psicoanalítica</strong><span class="d">Universidad Nacional de San Martín (UNSAM)</span></span></li>
-          <li><span class="yr">Posgrado</span><span><strong>Especialista en Docencia Universitaria</strong><span class="d">Universidad Nacional de la Patagonia San Juan Bosco</span></span></li>
-          <li><span class="yr">Grado</span><span><strong>Licenciado en Psicología</strong><span class="d">Universidad Nacional de La Plata (UNLP)</span></span></li>
-          <li><span class="yr">Orientación</span><span><strong>Psicoanálisis lacaniano</strong><span class="d">Formación en el marco de la EOL / AMP. IOM3, Delegación Comodoro Rivadavia</span></span></li>
-        </ul>
+    <div class="in">
+      <div style="display:grid;gap:10px">
+        <p class="label">Trayectoria</p>
+        <h2 id="t-tray">Formación y práctica</h2>
       </div>
-      <div>
-        <h3>Práctica clínica y docencia</h3>
-        <ul class="cv">
-          <li><span class="yr">Clínica</span><span><strong>Hospital Regional de Comodoro Rivadavia</strong><span class="d">Diseñó y coordinó entre 2016 y 2022 un dispositivo de orientación psicoanalítica en atención primaria (DOAP)</span></span></li>
-          <li><span class="yr">Clínica</span><span><strong>CAPS Ciudadela</strong><span class="d">Atención primaria en salud mental: admisión, tratamiento y trabajo con la red de salud</span></span></li>
-          <li><span class="yr">UNPSJB</span><span><strong>Profesor de Medicina</strong><span class="d">Cátedra de Salud de la Comunidad y asignatura Salud Mental</span></span></li>
-        </ul>
+      <div class="cols">
+        <div>
+          <h3>Formación</h3>
+          <ul class="tl">
+            <li><span class="k">Maestría · 2024</span><strong>Magíster en Clínica Psicoanalítica</strong><span class="d">Universidad Nacional de San Martín (UNSAM)</span></li>
+            <li><span class="k">Diplomatura de posgrado</span><strong>Políticas, Planificación, Gestión y Administración de Instituciones y Servicios de Salud Mental</strong><span class="d">AASM · Universidad ISALUD (610 horas)</span></li>
+            <li><span class="k">Especialización</span><strong>Especialista en Docencia Universitaria</strong><span class="d">Universidad Nacional de la Patagonia San Juan Bosco</span></li>
+            <li><span class="k">Grado</span><strong>Licenciado en Psicología</strong><span class="d">Universidad Nacional de La Plata (UNLP)</span></li>
+            <li><span class="k">Orientación</span><strong>Psicoanálisis lacaniano</strong><span class="d">Formación en el marco de la EOL / AMP. IOM3, Delegación Comodoro Rivadavia</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Práctica clínica y docencia</h3>
+          <ul class="tl">
+            <li><span class="k">Hospital público</span><strong>Hospital Regional de Comodoro Rivadavia</strong><span class="d">Diseñó y coordinó entre 2016 y 2022 un dispositivo de orientación psicoanalítica en atención primaria (DOAP)</span></li>
+            <li><span class="k">Atención primaria</span><strong>CAPS Ciudadela</strong><span class="d">Atención primaria en salud mental: admisión, tratamiento y trabajo con la red de salud</span></li>
+            <li><span class="k">Docencia · UNPSJB</span><strong>Profesor en la carrera de Medicina</strong><span class="d">Cátedra de Salud de la Comunidad y asignatura Salud Mental</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="libro" aria-labelledby="t-libro">
-    <p class="label">Publicaciones</p>
-    <div class="book">
+  <section id="libro" class="alt" aria-labelledby="t-libro">
+    <div class="in book">
       <div class="cover" aria-hidden="true"><small>EDUPA</small><b>Alojar la singularidad</b><small>C. Sebastián Núñez</small></div>
-      <div class="read" style="display:grid;gap:14px">
+      <div class="read">
+        <p class="label">Publicaciones</p>
         <h2 id="t-libro"><em>Alojar la singularidad</em></h2>
         <p>Psicoanálisis y atención primaria en salud mental en la Patagonia. El libro nace de la tesis de maestría y recorre seis años de práctica en el hospital público: cómo hacer lugar a lo que cada paciente trae dentro de una institución pensada para la generalidad.</p>
         <p>Escribe además artículos y columnas de opinión sobre salud mental para medios de la región y revistas de psicoanálisis.</p>
-        <p><a href="https://ri.unsam.edu.ar/handle/123456789/3625" rel="noopener">Leer la tesis en el repositorio de la UNSAM</a> · <a href="https://orcid.org/0009-0004-0440-4843" rel="noopener">Perfil ORCID</a></p>
+        <p class="links"><a href="https://ri.unsam.edu.ar/handle/123456789/3625" rel="noopener">Leer la tesis (UNSAM)</a><a href="https://orcid.org/0009-0004-0440-4843" rel="noopener">Perfil ORCID</a></p>
       </div>
     </div>
   </section>
 
   <section id="preguntas" aria-labelledby="t-faq">
-    <p class="label">Preguntas frecuentes</p>
-    <h2 id="t-faq">Antes de consultar</h2>
-    <div class="read">
-      <details><summary>¿Cómo pido un turno?</summary><p>Escribiendo por WhatsApp o correo. Respondo para coordinar una primera entrevista, presencial u online.</p></details>
-      <details><summary>¿Atienden desde el exterior?</summary><p>Sí. La atención por videollamada está pensada también para argentinos y otras personas de habla hispana que viven fuera del país. Coordinamos el horario según la diferencia horaria.</p></details>
-      <details><summary>¿Qué pasa en la primera entrevista?</summary><p>Se habla de lo que motiva la consulta. No hace falta llegar con nada preparado. A partir de ese encuentro acordamos si tiene sentido seguir y de qué forma.</p></details>
-      <details><summary>¿Cómo pido una supervisión?</summary><p>Por los mismos medios de contacto. Contame brevemente dónde trabajás y con qué tipo de casos, y coordinamos un primer encuentro.</p></details>
-      <details><summary>¿Lo que digo es confidencial?</summary><p>Sí. El secreto profesional está garantizado por la ley y por el código de ética de la profesión.</p></details>
+    <div class="in split">
+      <div>
+        <p class="label">Preguntas frecuentes</p>
+        <h2 id="t-faq">Antes de consultar</h2>
+      </div>
+      <div>
+        <details><summary>¿Cómo pido un turno?</summary><p>Escribiendo por WhatsApp o correo. Respondo para coordinar una primera entrevista, presencial u online.</p></details>
+        <details><summary>¿Atienden desde el exterior?</summary><p>Sí. La atención por videollamada está pensada también para argentinos y otras personas de habla hispana que viven fuera del país. Coordinamos el horario según la diferencia horaria.</p></details>
+        <details><summary>¿Qué pasa en la primera entrevista?</summary><p>Se habla de lo que motiva la consulta. No hace falta llegar con nada preparado. A partir de ese encuentro acordamos si tiene sentido seguir y de qué forma.</p></details>
+        <details><summary>¿Cómo pido una supervisión?</summary><p>Por los mismos medios de contacto. Contame brevemente dónde trabajás y con qué tipo de casos, y coordinamos un primer encuentro.</p></details>
+        <details><summary>¿Lo que digo es confidencial?</summary><p>Sí. El secreto profesional está garantizado por la ley y por el código de ética de la profesión.</p></details>
+      </div>
     </div>
   </section>
 
-  <section id="contacto" aria-labelledby="t-contacto">
-    <p class="label">Contacto</p>
-    <h2 id="t-contacto">Pedir una primera entrevista</h2>
-    <div class="contact read">
-      <div class="row"><span class="k">WhatsApp</span><a class="v" id="wa" href="https://wa.me/5492974193406">+54 9 297 419-3406</a><button type="button" data-copy="wa">Copiar</button></div>
-      <div class="row"><span class="k">Correo</span><a class="v" id="mail" href="mailto:sebastianunez@gmail.com">sebastianunez@gmail.com</a><button type="button" data-copy="mail">Copiar</button></div>
-      <div class="row"><span class="k">Consultorio</span><span class="v" id="dir">Comodoro Rivadavia, Chubut</span><button type="button" data-copy="dir">Copiar</button></div>
+  <section id="contacto" class="contact" aria-labelledby="t-contacto">
+    <div class="in">
+      <div style="display:grid;gap:12px">
+        <p class="label">Contacto</p>
+        <h2 id="t-contacto">Pedir una primera entrevista</h2>
+        <p class="lede">Escribime y coordinamos día y horario, en el consultorio o por videollamada.</p>
+      </div>
+      <div class="rows">
+        <div class="row"><span class="k">WhatsApp</span><a class="v" id="wa" href="https://wa.me/5492974193406" rel="noopener">+54 9 297 419-3406</a><button type="button" data-copy="wa">Copiar</button></div>
+        <div class="row"><span class="k">Correo</span><a class="v" id="mail" href="mailto:sebastianunez@gmail.com">sebastianunez@gmail.com</a><button type="button" data-copy="mail">Copiar</button></div>
+        <div class="row"><span class="k">Consultorio</span><span class="v" id="dir">Comodoro Rivadavia, Chubut</span><button type="button" data-copy="dir">Copiar</button></div>
+      </div>
     </div>
   </section>
+</main>
 
-  <footer>
+<footer>
+  <div class="in">
     <span>Lic. C. Sebastián Núñez · Psicólogo · M.P. 0596 · M.N. 45.160</span>
     <span>Comodoro Rivadavia, Patagonia argentina</span>
-  </footer>
-</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5492974193406" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg></a>
 
 <script>
 document.querySelectorAll('[data-copy]').forEach(function(b){
